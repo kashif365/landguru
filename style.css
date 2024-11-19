@@ -59,22 +59,11 @@ body {
     line-height: 2;
     font-size: 20px;
 }
-.mockupimage{
+.mockupimage img{
     position: absolute;
     top: 18%;
     right: 0;
-    height: 60vh;
-    margin-right: 0px;
-    /* z-index:-1; */
-    float: left;
-}
-.mockupimage img{
-    /* position: absolute; */
-    /* top: 0; */
     height: 80vh;
-    margin-right: 0px;
-    /* z-index:-1; */
-    float: left;
 }
 .text button{
     border:1px solid white;
@@ -558,3 +547,41 @@ body {
 .footer-column a:hover {
     color: #333;
 }
+
+@media only screen and (max-width: 768px) {
+    .navdecoration {
+        width: 100%;
+        height: 60vh;
+        background-color: #284E91;
+        border-bottom-right-radius:35%;
+    }
+    
+    .text{
+        position: relative;
+        margin: auto;
+        margin-left: 12%;
+        margin-top: 80px;
+        margin-left: 100px;
+        text-wrap: left;
+        background-color: green;
+        max-width: 50%;
+    }
+    .text h1{
+        padding-top: 10px;
+        font-size: 20px;
+        text-wrap: wrap;
+        text-align: left;
+    }
+    .text p{
+        padding-top: 10px;
+        line-height: 1.5;
+        font-size: 15px;
+    }
+    .mockupimage img{
+        position: absolute;
+        top: 18%;
+        right: 0;
+        height: 30vh;
+    }
+
+  }
