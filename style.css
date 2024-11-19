@@ -549,12 +549,6 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-    .navdecoration {
-        width: 100%;
-        height: 60vh;
-        background-color: #284E91;
-        border-bottom-right-radius:35%;
-    }
     
     .text{
         position: relative;
