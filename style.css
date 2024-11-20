@@ -652,9 +652,9 @@ body {
         font-size: 14px; /* Reduce font size */
     }
     .navbar-logo img{
-        width: 100%;
-        margin-left: 200px;
-        font-size: 16px;
+        width: 40%;
+        margin-left: 230px;
+        font-size: 5px;
         
         
     }
