@@ -647,7 +647,7 @@ body {
         margin: 0 auto;
     }
     .features-container{
-        margin-left: 0px;
+        margin-left: 10px;
         grid-template-columns: repeat(1, 1fr);
     }
     .corefeatures2 {
