@@ -323,11 +323,12 @@ body {
 .functions{
     margin-top: 100px;
     width: 100%;
+    background-color: #284E91;
+    height: 130vh;
     
 }
 .funtionstable{
-    background-color: #284E91;
-    height: 130vh;
+    
 }
 .functions h3, h1{
     text-align: center;
