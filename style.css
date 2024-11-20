@@ -549,6 +549,9 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+    .navdecoration {
+        width: 200%;
+    }
     
     .text{
         position: relative;
