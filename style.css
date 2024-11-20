@@ -585,37 +585,147 @@ body {
     color: #333;
 }
 
-@media only screen and (max-width: 768px) {
-        .navdecoration {
-            height: 80vh; /* Adjusted height for smaller screens */
-            border-bottom-right-radius: 25%; /* Reduced radius for better fit */
-        }
-        .navbar {
-            max-width: 600px;
-            font-size: 12px;
-        }
-    
-    .text{
-        margin-left: 8%;
-        max-width: 60%;
-    }
-    .text h1{
-        font-size: 20px;
-    }
-    .text p{
-        line-height: 2;
-        font-size: 15px;
-    }
-    .mockupimage img{
-        position: absolute;
-        top: 25%;
-        margin-right: -1%;
-        height: 40vh;
-    }
-    button {
-        padding: 8px 16px; /* Smaller padding */
-        font-size: 14px; /* Reduced font size */
-        border-radius: 3px; /* Slightly smaller border radius */
+/* Responsive Design */
+@media only screen and (max-width: 1024px) {
+    .navbar {
+        max-width: 800px;
+        font-size: 14px;
     }
 
-  }
+    .mockupimage img {
+        height: 60vh; /* Adjusted size for medium screens */
+        top: 20%;
+    }
+
+    .text {
+        max-width: 50%;
+        margin-left: 10%;
+    }
+
+    .corefeatures, .corefeatures2 {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 20px;
+    }
+
+    .corefeatures img, .corefeatures2 img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .text {
+        margin-left: 5%;
+        margin-right: 5%;
+        max-width: 90%;
+    }
+
+    .text h1 {
+        font-size: 24px;
+    }
+
+    .text p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .mockupimage img {
+        height: 50vh;
+        top: 15%;
+    }
+
+    .features-container {
+        grid-template-columns: 1fr 1fr; /* Adjusted grid for smaller screens */
+        margin: 0 auto;
+    }
+
+    .feature-box {
+        padding: 15px;
+    }
+
+    .plans {
+        flex-direction: column; /* Stack plans vertically */
+        align-items: center;
+    }
+
+    .functions {
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .functionstext {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer-column {
+        width: 100%; /* Full width for each column */
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-logo {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .text h1 {
+        font-size: 18px;
+    }
+
+    .text p {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .mockupimage img {
+        height: 30vh;
+        top: 10%;
+    }
+
+    .features-container {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .plan {
+        width: 90%; /* Full width for each plan */
+    }
+
+    .corefeatures img, .corefeatures2 img {
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .corefeatures .text-content, .corefeatures2 .text-content {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .functionstext > div {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
