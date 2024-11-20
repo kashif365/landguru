@@ -585,38 +585,9 @@ body {
     color: #333;
 }
 
-/* Responsive Design */
-@media only screen and (max-width: 1024px) {
-    .navbar {
-        max-width: 800px;
-        font-size: 14px;
-    }
-
-    .mockupimage img {
-        height: 60vh; /* Adjusted size for medium screens */
-        top: 20%;
-    }
-
-    .text {
-        max-width: 50%;
-        margin-left: 10%;
-    }
-
-    .corefeatures, .corefeatures2 {
-        flex-direction: column; /* Stack elements vertically */
-        gap: 20px;
-    }
-
-    .corefeatures img, .corefeatures2 img {
-        max-width: 100%;
-        margin: 0 auto;
-    }
-}
-
 @media only screen and (max-width: 768px) {
     .navbar {
-        flex-wrap: wrap;
-        justify-content: center;
+        margin-inline: 40px;
         font-size: 12px;
         text-align: center;
     }
@@ -635,10 +606,20 @@ body {
         font-size: 16px;
         line-height: 1.8;
     }
-
     .mockupimage img {
-        height: 50vh;
-        top: 15%;
+        position: static; /* Changes position to make it easier to manage on smaller screens */
+        height: 40vh; /* Adjusts the height to be smaller for better fit */
+        width: 100%; /* Ensures it scales proportionally to fit the container */
+        margin: 0 auto; /* Centers the image if needed */
+    }
+    .corefeatures{
+        display: grid;
+        justify-content: left;
+        align-items: start;
+        margin-left: 0px;
+    }
+    .corefeatures img{
+        margin-left: 0px;
     }
 
     .features-container {
@@ -676,56 +657,3 @@ body {
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar-logo {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    .text h1 {
-        font-size: 18px;
-    }
-
-    .text p {
-        font-size: 14px;
-    }
-
-    button {
-        padding: 6px 12px;
-        font-size: 12px;
-    }
-
-    .mockupimage img {
-        height: 30vh;
-        top: 10%;
-    }
-
-    .features-container {
-        grid-template-columns: 1fr; /* Single column layout */
-    }
-
-    .plan {
-        width: 90%; /* Full width for each plan */
-    }
-
-    .corefeatures img, .corefeatures2 img {
-        height: auto;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .corefeatures .text-content, .corefeatures2 .text-content {
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .functionstext > div {
-        max-width: 100%;
-        margin: 10px 0;
-    }
-}
