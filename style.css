@@ -45,6 +45,15 @@ body {
     margin-left: -40px;
     margin-top: 25px;
 }
+.navbar-toggler {
+    display: none;
+    background: none;
+    background-color: green;
+    border: none;
+    font-size: 24px;
+    color: green;
+    cursor: pointer;
+}
 .text{
     position: relative;
     margin: auto;
@@ -605,6 +614,17 @@ body {
         flex-direction: row; /* Stack items vertically */
         font-size: 14px; /* Reduce font size */
     }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: green;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        width: 200px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
 
     .text {
         margin-left: 5%;
@@ -633,13 +653,6 @@ body {
     .corefeatures{
         display: grid;
     }
-    /* .text-content{
-        display: grid;
-    }
-    .corefeatures .sicon .sicon2{
-        flex-wrap: wrap;
-    } */
-   
     
 
     .features-section {
@@ -647,14 +660,15 @@ body {
         margin: 0 auto;
     }
     .features-container{
-        margin-left: 10px;
+        margin-left: 25px;
         grid-template-columns: repeat(1, 1fr);
     }
     .corefeatures2 {
-        margin: 50px auto;
+        margin-left: 5px;
         padding-left:25px;
-        align-items: center;
         text-align: left;
+        margin-left: 20px;
+    
     
     }
 
@@ -668,8 +682,9 @@ body {
         text-align: left;
         margin-top: 10px;
     }
-
-    
+    .text-content{
+        margin-left: 25px;
+    }
    
     .feature-box {
         padding: 15px;
@@ -700,11 +715,12 @@ body {
     .footer {
         flex-wrap: wrap;
         padding: 20px;
-        text-align: center;
+        text-align: left;
     }
 
     .footer-column {
-        width: 100%; 
+        width: 50%; 
+        margin-top: 20px;
         margin-bottom: 20px;
     }
 }
