@@ -22,6 +22,12 @@ body {
     color: white;
     font-size: 16px;
 }
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
 
 .navbar a {
     text-decoration: none;
@@ -41,7 +47,7 @@ body {
 }
 
 .navbar-logo {
-    margin-left: -40px;
+    margin-left: -190px;
     margin-top: 25px;
 }
 
@@ -317,9 +323,11 @@ body {
 .functions{
     margin-top: 100px;
     width: 100%;
-    height: 100vh;
+    
+}
+.funtionstable{
     background-color: #284E91;
-
+    height: 130vh;
 }
 .functions h3, h1{
     text-align: center;
@@ -612,7 +620,7 @@ body {
 
 @media only screen and (max-width: 768px) {
     .navdecoration {
-        max-width: 88%;
+        max-width: 100%;
         height: 100vh;
         border-bottom-right-radius: 35%;
     }
@@ -620,7 +628,7 @@ body {
         display: block;
         width: 100px;
         height: 40px;
-        
+
     }
 
     .nav-links {
@@ -645,7 +653,9 @@ body {
     }
     .navbar-logo img{
         width: 100%;
-        margin-left: 70px;
+        margin-left: 200px;
+        font-size: 16px;
+        
         
     }
     .text {
@@ -718,10 +728,10 @@ body {
         align-items: center;
     }
 
-    .functions {
+    .funtionstable {
         margin-inline: 25px;
         max-width: 80%;    
-        height:1300px;
+
         
     }
 
@@ -729,11 +739,12 @@ body {
         flex-direction: column; 
         align-items: flex-start;
         
+        
     }
-    .corefeatures,.mobile-hand img{
-        width: 80%;
-        height: 80%;
+    .corefeatures,.mobilehand img{
+        width:500px;
         margin-left: -10px;
+
     }
 
     .footer {
