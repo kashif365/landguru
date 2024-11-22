@@ -156,7 +156,7 @@ body {
     line-height: 1.8;
     
 }
-.corefeatures {
+.corefeatures{
     display: flex;
     align-items: flex-start; /* Align items at the start */
     gap: 20px; /* Space between image and text */
@@ -165,6 +165,16 @@ body {
     margin: auto; /* Center the container */
     margin-top: 100px;
 }
+.analytics{
+    display: flex;
+    align-items: flex-start; /* Align items at the start */
+    gap: 20px; /* Space between image and text */
+    padding: 20px;
+    max-width: 1200px; /* Restrict max width */
+    margin: auto; /* Center the container */
+    margin-top: 100px;
+}
+
 
 .corefeatures img {
     max-width: 100%; /* Ensure images are responsive */
@@ -180,11 +190,11 @@ body {
     padding-top: 50px;
 }
 
-.text-content p#Core {
+.text-content #Core {
     font-size: 18px;
     font-weight: bold;
     color: #333; /* Dark gray text */
-    margin-left: 25px;
+    /* margin-left: 25px; */
     
     
 }
@@ -324,7 +334,7 @@ body {
     margin-top: 100px;
     width: 100%;
     background-color: #284E91;
-    height: 130vh;
+    height: 80vh;
     
 }
 .funtionstable{
@@ -382,8 +392,9 @@ body {
 .functionstext p {
     margin-top: 30px; /* Adds space between h2 and paragraph */
 }
-.corefeatures:nth-of-type(2){
-    
+.corefeatures{
+    /* max-width: 100%; Ensure images are responsive */
+
 }
 .corefeatures:nth-of-type(2) .text-content{
     margin-left: 40px;
@@ -654,7 +665,8 @@ body {
     }
     .navbar-logo img{
         width: 40%;
-        margin-left: 230px;
+        margin-top: 20px;
+        margin-left: 200px;
         font-size: 5px;
         
         
@@ -675,17 +687,48 @@ body {
     }
     .mockupimage img {
         position: static; /* Changes position to make it easier to manage on smaller screens */
-        height: 40vh; /* Adjusts the height to be smaller for better fit */
-        width: 100%; /* Ensures it scales proportionally to fit the container */
+        height: 80%; /* Adjusts the height to be smaller for better fit */
+        width: 80%; /* Ensures it scales proportionally to fit the container */
         margin: 0 auto; /* Centers the image if needed */
         margin-top:20px;
+        margin-left: 80px;
     }
+    .analytics{
+       display: grid;
+    }
+    #analytics img{
+       width: 60%;
+       margin-bottom: -100px;
+       margin-left: 25px;
+    }
+
+    #Core1{
+        margin-bottom: -100px;
+    }
+    .features-section h2{
+        max-width: 80%;
+        text-align: left;
+        margin-left: 80px;
+        /* background-color: green; */
+
+    }
+    .features-container h3 {
+        /* background-color: green; */
+        padding-left: 50px;
+     }
+     .features-container p {
+        /* background-color: green; */
+        padding-left: 60px;
+     }
+     
     .quality ul{
         display: grid;
+
     }
     .corefeatures{
         display: grid;
     }
+    
     
 
     .features-section {
@@ -699,6 +742,7 @@ body {
     .corefeatures2 {
         margin-left: 5px;
         padding-left:25px;
+        margin-top: -10px;
         text-align: left;
         margin-left: 20px;
     
@@ -718,6 +762,11 @@ body {
     .text-content{
         margin-left: 25px;
     }
+    #securepayment {
+        margin-left: 25px;
+        margin-top: -25px;
+        /* background-color: green; */
+    }
    
     .feature-box {
         padding: 15px;
@@ -730,8 +779,8 @@ body {
     }
 
     .funtionstable {
-        margin-inline: 25px;
-        max-width: 80%;    
+        max-width: 100%;
+        background-color: #284E91;   
 
         
     }
@@ -742,9 +791,17 @@ body {
         
         
     }
-    .corefeatures,.mobilehand img{
-        width:500px;
-        margin-left: -10px;
+    .corefeatures img:nth-child(1){
+        height: 60%;
+        width: 60%;
+        margin-left: 20px;
+        margin-top: -150%;
+        /* background-color: green; */
+
+
+    }
+    .mobilehand img {
+        /* background-color: green; */
 
     }
 
